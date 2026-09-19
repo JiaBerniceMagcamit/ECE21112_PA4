@@ -72,3 +72,18 @@ The following functions and methods were used in this problem:
 
 Combining them all, the final code for this problem is as follows;
 
+
+```
+mean_track = df.groupby('Track')['Average'].mean().reset_index()
+mean_gender = df.groupby('Gender')['Average'].mean().reset_index()
+mean_hometown = df.groupby('Hometown')['Average'].mean().reset_index()
+
+print("\nMean Average by Track")
+display(mean_track)
+
+print("\nMean Average by Gender")
+display(mean_gender)
+
+print("\nMean Average by Hometown")
+display(mean_hometown)
+```
